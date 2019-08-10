@@ -1,0 +1,167 @@
+import math
+
+print("Hello world !!!!!!!!!")
+price = 10
+rating = 4.9
+is_published = False
+print(price)
+full_name = "John Doe"
+isNew = True
+
+
+#name = input("What is your name? ")
+#print(name + " Wins! .... Fatality!")
+
+# birth_year = input("Birth year: ")
+# age = 2019 - int(birth_year)
+# print("Age" + str(age))
+# weight_lbs = input("Weight (lbs): ")
+# weight_kg = int(weight_lbs) * 0.45
+# print("Weight (Kgs):" + str(weight_kg))
+
+
+
+multi_line_string = """" I'm the son of rage and love
+The Jesus of Suburbia
+The bible of none of the above
+On a steady diet of
+Soda Pop and Ritalin
+No one ever died for my
+Sins in hell
+As far as I can tell
+At least the ones that I got away with
+And there's nothing wrong with me
+This is how I'm supposed to be
+In a land of make believe
+That don't believe in me
+Get my television fix
+Sitting on my crucifix
+The living room in my private womb
+While the Moms and brats are away
+To fall in love and fall in debt
+To alcohol and cigarettes
+And Mary Jane
+To keep me insane
+Doing someone else's cocaine
+And there's nothing wrong with me
+This is how I'm supposed to be
+In a land of make believe
+That don't believe in me """
+demo_string="all the kings men could not put humpty dumpty back together again"
+
+
+print(multi_line_string)
+print("-----------------------------------")
+print(multi_line_string[20:100])
+print(multi_line_string[:100])
+print(multi_line_string[100:])
+print(len(multi_line_string))
+print(demo_string.upper())
+print(demo_string.lower())
+print(demo_string.title())
+print(demo_string.find("k"))
+print(demo_string.replace("king", "queen"))
+print("king" in demo_string)
+print(10/3)
+print(10//3)
+print(10 % 3)
+print(10 ** 3)
+x1 = 3
+x1 += 6
+x1 -= 4
+x1 -= 8
+print(x1)
+x2 = 2.9
+print(round(x2))
+print(math.floor(x2))
+print(math.ceil(x2))
+print(abs(x1))
+
+is_hot1 = True
+is_cold = True
+if is_hot1:
+    print("it's a hot day")
+elif is_cold:
+    print("its a cold day")
+else:
+    print("it's a plesant day")
+print("noob saibot wins")
+
+has_good_credit = True
+has_criminal_record = False
+
+if has_good_credit and not has_criminal_record:
+    print("What a boring guy")
+else:
+    print("Gib loan")
+aName = "J"
+len(aName)
+
+if len(aName) < 3:
+    print("Name must be 3 characters")
+elif len(aName) > 50:
+    print("Name is too long")
+else:
+    print("Name looks good")
+
+# Weight comparison
+weight = int(input("Weight: "))
+unit = input("(L)bs or (k)g:")
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(converted)
+else:
+    converted = weight / 0.4
+    print(converted)
+
+index = 0
+while index < 5:
+    index = index + 1
+print("Done")
+
+# Guessing game
+secret_number = 12
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess: "))
+    guess_count += 1
+    if guess == secret_number:
+        print("You won")
+        break
+else:
+    print("Sorry!")
+
+#Car game
+car = 1
+command = ""
+carStarted = False
+
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if carStarted:
+            print("Car has already been started")
+        else:
+            print("Car started...")
+            carStarted = True
+
+    elif command == "stop":
+        if not carStarted:
+            print("car has already been stopped")
+        else:
+            print("Car stopped.")
+    elif command == "help":
+        print("""
+        start - to start the car
+        stop - to stop the car
+        quit - to quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("I don't understand")
+
+while car <= 5:
+    print("*" * car)
+    car = car + 1
